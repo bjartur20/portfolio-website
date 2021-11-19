@@ -13,3 +13,16 @@
 .backToHome {
   margin: 3rem 0 0;
 }
+
+.navbar {
+  width: 100%;
+  top: 50px;
+  text-align: center;
+}
+
+.navbar a {
+  margin: 0 15px;
+  letter-spacing: 1px;
+  position: relative;
+  display: inline-block;
+}

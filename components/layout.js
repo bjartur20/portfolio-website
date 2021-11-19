@@ -36,7 +36,7 @@ export default function Layout({ children, home }) {
                             width={144}
                             alt={name}
                         />
-                        <h1 className={utilStyles.heading2x1}>{name}</h1>
+                        <h1 className={utilStyles.heading2x1}>Hello, I'm {name}</h1>
                     </>
                 ) : (
                     <>
@@ -60,6 +60,17 @@ export default function Layout({ children, home }) {
                     </>
                 )}
             </header>
+            <nav className={styles.navbar}>
+              <Link href="/about">
+                <a>About</a>
+              </Link>
+              <Link href="/projects">
+                <a>Projects</a>
+              </Link>
+              <Link href="/contact">
+                <a>Contact</a>
+              </Link>
+            </nav>
             <main>{children}</main>
             {!home && (
                 <div className={styles.backToHome}>
