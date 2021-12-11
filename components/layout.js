@@ -3,9 +3,10 @@ import Image from 'next/image'
 import styles from './layout.module.css'
 import utilStyles from '../styles/utils.module.css'
 import Link from 'next/link'
+import Navbar from './navbar'
 
 const name = 'Bjartur Þórhallsson'
-export const siteTitle = 'Next.js Sample Website'
+export const siteTitle = 'Bjartur Þórhallsson'
 
 export default function Layout({ children, home }) {
     return (
@@ -36,7 +37,7 @@ export default function Layout({ children, home }) {
                             width={144}
                             alt={name}
                         />
-                        <h1 className={utilStyles.heading2x1}>Hello, I'm {name}</h1>
+                        <h1 className={utilStyles.heading2x1}>{name}</h1>
                     </>
                 ) : (
                     <>
@@ -60,25 +61,8 @@ export default function Layout({ children, home }) {
                     </>
                 )}
             </header>
-            <nav className={styles.navbar}>
-              <Link href="/about">
-                <a>About</a>
-              </Link>
-              <Link href="/projects">
-                <a>Projects</a>
-              </Link>
-              <Link href="/contact">
-                <a>Contact</a>
-              </Link>
-            </nav>
+            <Navbar/>
             <main>{children}</main>
-            {!home && (
-                <div className={styles.backToHome}>
-                    <Link href="/">
-                        <a>← Back to home</a>
-                    </Link>
-                </div>
-            )}
         </div>
     )
 }
