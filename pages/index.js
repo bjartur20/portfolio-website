@@ -11,7 +11,7 @@ export default function Home() {
         <title>{siteTitle}</title>
       </Head>
       <section className={utilStyles.headingMd}>
-        <p>I'm an Icelandic software engineer, working as a programmer at Borealis Data Center and finishing my BSc in Software Engineering</p>
+        <p>Hi, I'm a programmer interested in all things tech!</p>
       </section>
     </Layout>
   )

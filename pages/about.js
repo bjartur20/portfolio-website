@@ -10,6 +10,7 @@ export default function FirstPost() {
       </Head>
 
       <h1>About</h1>
+      <p>I'm currently situated in Reykjavik, Iceland, working as a full-stack developer for <a href="https://bdc.is/">Borealis Data Center</a> while finishing my BSc in Software Engineering at <a href="https://www.ru.is/">Reykjavik University</a>.</p>
     </Layout>
   )
 }
